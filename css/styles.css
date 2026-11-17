@@ -12,15 +12,15 @@ li
     padding: 8px 0;
 }
 
+li span
+{
+    flex: 1;
+}
+
 li.completed span
 {
     text-decoration: line-through;
     color: #888;
-}
-
-li span
-{
-    flex: 1;
 }
 
 .delete-btn

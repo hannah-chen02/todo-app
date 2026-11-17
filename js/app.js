@@ -36,6 +36,15 @@ form.addEventListener("submit", function (event)
     input.focus();
 });
 
+list.addEventListener("change", function (event)
+{
+    if (event.target.type === "checkbox")
+    {
+        const li = event.target.closest("li");
+        li.classList.toggle("completed", event.target.checked);
+    }
+});
+
 list.addEventListener("click", function (event)
 {
     if (event.target.classList.contains("delete-btn"))
