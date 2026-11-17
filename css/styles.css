@@ -28,7 +28,7 @@ main
 
 section
 {
-    background: #fff;
+    background: #9580c9;
     border-radius: 12px;
     padding: 24px;
     margin-bottom: 24px;
@@ -38,7 +38,7 @@ section
 section h2
 {
     margin-top: 0;
-    color: #04AA6D;
+    color: #ffffff;
 }
 
 ul
@@ -63,7 +63,7 @@ li span
 li.completed span
 {
     text-decoration: line-through;
-    color: #888;
+    color: #6e6565;
 }
 
 .delete-btn
