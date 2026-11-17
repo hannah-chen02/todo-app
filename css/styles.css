@@ -1,3 +1,46 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    background: #e8f7f3;
+    color: #253238;
+}
+
+header
+{
+    background: linear-gradient(120deg, #5b8e7f, #0c6143);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main
+{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section
+{
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+section h2
+{
+    margin-top: 0;
+    color: #04AA6D;
+}
+
 ul
 {
     list-style: none;
@@ -36,4 +79,10 @@ li.completed span
 .delete-btn:hover
 {
     background: #c9302c;
+}
+
+#task-form button,
+input[type="checkbox"]
+{
+    cursor: pointer;
 }
