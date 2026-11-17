@@ -17,3 +17,23 @@ li.completed span
     text-decoration: line-through;
     color: #888;
 }
+
+li span
+{
+    flex: 1;
+}
+
+.delete-btn
+{
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover
+{
+    background: #c9302c;
+}

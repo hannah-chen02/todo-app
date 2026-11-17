@@ -12,7 +12,12 @@ function createTaskElement(text)
     const span = document.createElement("span");
     span.textContent = text;
 
-    li.append(checkbox, span);
+    const deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.className = "delete-btn";
+    deleteButton.textContent = "Delete";
+
+    li.append(checkbox, span, deleteButton);
     return li;
 }
 
@@ -31,11 +36,10 @@ form.addEventListener("submit", function (event)
     input.focus();
 });
 
-list.addEventListener("change", function (event)
+list.addEventListener("click", function (event)
 {
-    if (event.target.type === "checkbox")
+    if (event.target.classList.contains("delete-btn"))
     {
-        const li = event.target.closest("li");
-        li.classList.toggle("completed", event.target.checked);
+        event.target.closest("li").remove();
     }
 });
