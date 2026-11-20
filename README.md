@@ -1,6 +1,6 @@
 # TODO App
 
-A simple task manager built with HTML, CSS and JavaScript.
+A simple task manager built with HTML, CSS and JavaScript. Tasks persist on refresh using localStorage.
 
 ## Features
 
